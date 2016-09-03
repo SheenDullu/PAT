@@ -44,9 +44,10 @@ public class PATController {
 
         DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
         ServletFileUpload sf = new ServletFileUpload(diskFileItemFactory);
-
+        System.out.println("heyyyyy");
         try {
             List<FileItem> fileItemList = sf.parseRequest(request);
+            System.out.println("size  "+ fileItemList.size());
             if(null != fileItemList && fileItemList.size() == 1) {
                 System.out.println("in controler");
                 FileItem fileItem = fileItemList.get(0);
@@ -60,36 +61,35 @@ public class PATController {
         }
         return "Success";
     }
-   /* @RequestMapping(value = "/getAppraisal",method = RequestMethod.GET)
+    @RequestMapping(value = "/getAppraisal",method = RequestMethod.GET)
     public
     @ResponseBody
     List<Appraisal> getAppraisal(HttpServletRequest request, HttpServletResponse response){
         int id = Integer.parseInt(request.getParameter("eid"));
         AppraisalDAO appraisalDAO = new AppraisalDAO();
         return appraisalDAO.getAppraisalById(id);
-    }*/
+    }
 
-    /*@RequestMapping(value = "/getReportees",method = RequestMethod.GET)
+    @RequestMapping(value = "/getReportees",method = RequestMethod.GET)
     public
     @ResponseBody
     String getReportees(HttpServletRequest request, HttpServletResponse response){
         int managerId= Integer.parseInt(request.getParameter("id"));
-        System.out.println(associateDAO.getReportiesUnderManager(managerId));
         List<AssociateDTO> associateDTOList = associateDAO.getReportiesUnderManager(managerId);
-       String string = "{ 'AssociateDTO': [";
+       String string = "{ \"AssociateDTO\": [";
         for (AssociateDTO associateDTO : associateDTOList){
-            string += "{'id': " + associateDTO.getId() +
-                        ", 'firstName':' " + associateDTO.getFirstName() + '\'' +
-                        ", 'lastName':' " + associateDTO.getLastName() + '\'' +
-                        ", 'location':' " + associateDTO.getLocation() + '\'' +
-                        ", 'dateOfJoining':' " + associateDTO.getDateOfJoining() +
-                        "', 'currentGrade':' " + associateDTO.getCurrentGrade() + '\'' +
-                        ", 'reportingManager': " + associateDTO.getReportingManager() + '\'' +
+            string += "{\"id\": \"" + associateDTO.getId() +
+                        "\", \"firstName\":\" " + associateDTO.getFirstName() + '\"' +
+                        ", \"lastName\":\"" + associateDTO.getLastName() + '\"' +
+                        ", \"location\":\"" + associateDTO.getLocation() + '\"' +
+                        ", \"dateOfJoining\":\"" + associateDTO.getDateOfJoining() +
+                        "\", \"currentGrade\":\"" + associateDTO.getCurrentGrade() + '\"' +
+                        ", \"reportingManager\": \"" + associateDTO.getReportingManager() + '\"' +
                         "},";
         }
         string = string.substring(0,string.length()-1);
         string+="]}";
         return string;
-    }*/
+    }
 }
 

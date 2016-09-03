@@ -39,7 +39,7 @@ public class AssociateDAO {
         return associateDTO;
     }
 
-    /*public List<AssociateDTO> getReportiesUnderManager(int managerId){
+    public List<AssociateDTO> getReportiesUnderManager(int managerId){
         System.out.println("in dao ");
         AssociateDTO associateDTO = null;
          List<com.cdk.pat.domain.Associate> domainAssociateList =  hibernateTemplate.findByNamedParam("from com.cdk.pat.domain.Associate a where a.reportingManager=:mID","mID",managerId);
@@ -57,10 +57,11 @@ public class AssociateDAO {
                 associateDTO.setDateOfJoining(a.getDateOfJoining());
                 associateDTO.setCurrentGrade(a.getCurrentGrade());
                 associateDTO.setDateOfJoining(a.getDateOfJoining());
+                associateDTO.setReportingManager(a.getReportingManager());
                 dtoAssociateList.add(associateDTO);
             }
         }
         return dtoAssociateList;
-    }*/
+    }
 
 }

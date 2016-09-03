@@ -35,7 +35,6 @@ public class PATDataUtility {
     private List<Date> buildAppraisalsDates(String[] line) throws PATException {
         List<Date> appraisalDates = new ArrayList<>();
         String DATE_FORMAT = "dd MMM yyyy";
-        System.out.println("in data utility");
         for (int i = 7; i < line.length; i = i + 3) {
             if (line[7].equals("Rating April 2013")) {
                 String duration = line[i].replaceFirst("Rating", "01");

@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class AppraisalDAO {
 
@@ -33,9 +35,9 @@ public class AppraisalDAO {
         return appraisalDTO;
     }
 
-   /* public List<Appraisal> getAppraisalById(int id){
+    public List<Appraisal> getAppraisalById(int id){
         return (List<Appraisal>)hibernateTemplate.findByNamedParam("from com.cdk.pat.domain.Appraisal a where  a.id=:aid", "aid", id);
-    }*/
+    }
 
 
 }
