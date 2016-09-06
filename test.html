@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="c3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="d3.v3.min.js" charset="utf-8"></script>
+    <script src="c3.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<div>
+
+    <nav class="navbar navbar-inverse borderNone">
+        <div class="container-fluid customContainer">
+            <div class="collapse navbar-collapse customStyle" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><img src="CDK-Logo.png"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="greenStrip"></div>
+
+    <div class="container-fluid">
+        <div class="row content">
+
+            <div class="col-sm-2 sidenav">
+                <h3>Fill Up</h3>
+                <p><input type="text" id="associateId" placeholder="AssociateID"></p><br>
+
+                <p>
+                    <input type="radio" onclick="callService(1)" id="1" name="select">SHOW RATING</input>
+                </p>
+                <p>
+                    <input type="radio" onclick="callService(2)" id="2" name="select">SHOW HIKE</input>
+                </p>
+                <p>
+                    <input type="radio" onclick="callService(3)" id="3" name="select">SHOW PROMOTION</input>
+                </p>
+                <p>
+                    <button type="submit" onclick="callService(4)" id="4">SHOW ALL</button>
+                </p>
+
+            </div>
+
+
+            <div style="padding-top: 7%" class="col-sm-9">
+
+                <div id="chart3"></div><br><br><br>
+                <div id="chart2"></div><br><br><br>
+                <div id="chart1"></div>
+            </div>
+
+            <div id="table" class="col-sm-1" style="padding-top: 7%">
+
+                <TABLE border="2" cellpadding="2" cellspacing="2">
+                    <TR align="center">
+                        <TD><h5><B>VALUE</B></h5></TD>
+                        <TD><h5><B>GRADE</B></h5></TD>
+                    </TR>
+                    <TR align="center">
+                        <TD>100</TD>
+                        <TD>G2L1</TD>
+                    </TR>
+                    <TR align="center">
+                        <TD>200</TD>
+                        <TD>G2L2</TD>
+                    </TR>
+                    <TR align="center">
+                        <TD>300</TD>
+                        <TD>G3L1</TD>
+                    </TR>
+
+                    <TR align="center">
+                        <TD>400</TD>
+                        <TD>G3L2</TD>
+                    </TR>
+
+                    <TR align="center">
+                        <TD>500</TD>
+                        <TD>G4L1</TD>
+                    </TR>
+
+                    <TR align="center">
+                        <TD>600</TD>
+                        <TD>G4L2</TD>
+                    </TR>
+
+                    <TR align="center">
+                        <TD>700</TD>
+                        <TD>G5L1</TD>
+                    </TR>
+
+                    <TR align="center">
+                        <TD>800</TD>
+                        <TD>G5L2</TD>
+                    </TR>
+
+
+                    <TR align="center">
+                        <TD>900</TD>
+                        <TD>G6L1</TD>
+                    </TR>
+
+                    <TR align="center">
+                        <TD>1000</TD>
+                        <TD>G6L2</TD>
+                    </TR>
+
+                </TABLE>
+        </div>
+
+    </div>
+
+        </div>
+
+        <footer style="align-self: flex-start" class="container-fluid">
+            <p><h4>© 2016 CDK Global, LLC </h4></p>
+        </footer>
+
+    </div>
+    </body>
+</html>
+

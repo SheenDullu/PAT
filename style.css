@@ -1,0 +1,87 @@
+
+.navbar {
+    border: 0;
+}
+
+.customContainer {
+    background: #fff;
+}
+
+.greenStrip {
+    width: 100%;
+    background: #82c600;
+    height: 30px;
+}
+
+.customStyle {
+    border: 0;
+    padding:10px 0;
+}
+
+.borderNone {
+    border: 0;
+}
+
+.row.content {
+    height:100%;
+    width: 100%;
+}
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    height: 100%;
+    border-right: #ccc;
+}
+
+.customAlign {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+.signInButton{
+
+    background-color: #82c600;
+    color: white;
+    padding: 8px 10px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px 2px;
+    cursor: pointer;
+    float: right;
+}
+.loginButton{
+    margin-left: 80px;
+    background-color: #82c600;
+    color: white;
+    cursor: pointer;
+}
+.carousel-inner {
+    height: 530px;
+    width: 100%;
+}
+
+.logInForm {
+
+    background-color: #c8e5bc;
+    border: black;
+    color: #2aabd2;
+    font-size: 20px;
+    height: 0px;
+    width: 0px;
+    cursor: pointer;
+}
+.col-sm-10{
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 675px;
+}

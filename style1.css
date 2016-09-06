@@ -1,0 +1,53 @@
+
+.navbar {
+    border: 0;
+}
+
+.customContainer {
+    background: #fff;
+}
+
+.greenStrip {
+    width: 100%;
+    background: #82c600;
+    height: 30px;
+}
+
+.customStyle {
+    border: 0;
+    padding:10px 0;
+}
+
+.borderNone {
+    border: 0;
+}
+
+.row.content {
+    height: 555px;;
+    width: 100%;
+}
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    height: 100%;
+    border-right: #ccc;
+}
+
+.customAlign {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+.carousel-inner {
+    height: 555px;
+    width: 100%;
+}
+
